@@ -1,0 +1,12 @@
+# Copyright (c) 2020, 2022, Oracle Corporation and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+ordered: true
+subTypeDiscriminatorProperty: Type
+subTypes:
+- type: weblogic.security.providers.audit.DefaultAuditorMBean
+  value: weblogic.security.providers.audit.DefaultAuditor
+properties:
+- name: Type
+  legalValues:
+  - value: weblogic.security.providers.audit.DefaultAuditor
+    label: Default Auditor

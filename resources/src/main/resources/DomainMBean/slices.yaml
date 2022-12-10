@@ -1,0 +1,20 @@
+# Copyright (c) 2021, 2022, Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+slices:
+- name: General
+- name: Security
+  slices:
+  - name: General
+  - name: Filter
+  # - name: UnlockUser
+  - name: EmbeddedLDAP
+  # - name: Roles
+  # - name: Policies
+  - name: SSLCertificateRevocationChecking
+    slices:
+    - name: General
+    - name: OCSP
+    - name: CRL
+- name: Concurrency
+- name: WebApplication
+- name: Logging

@@ -1,0 +1,29 @@
+<!--
+ Copyright (c) 2020, 2022, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+
+<oj-bind-if test="[[i18n.toolbar.buttons.home.visible]]">
+  <oj-button
+    :id="[[i18n.toolbar.buttons.home.id]]"
+    on-oj-action="[[contentAreaHeaderButtonClickHandler]]"
+    chroming="borderless"
+    disabled="[[i18n.toolbar.buttons.home.disabled()]]"
+  >
+    <img class="cfe-toolbar-button-icon" slot="startIcon" data-bind="attr: {src: 'js/jet-composites/wrc-frontend/1.0.0/images/' + i18n.toolbar.buttons.home.image + '.png'}" />
+    <span class="cfe-toolbar-button-label" data-bind="text: [[i18n.toolbar.buttons.home.label]]"></span>
+  </oj-button>
+</oj-bind-if>
+
+<oj-bind-if test="[[i18n.toolbar.buttons.preferences.visible]]">
+  <oj-button
+    :id="[[i18n.toolbar.buttons.preferences.id]]"
+    on-oj-action="[[contentAreaHeaderButtonClickHandler]]"
+    chroming="borderless"
+    disabled="[[i18n.toolbar.buttons.preferences.disabled()]]"
+  >
+    <img class="cfe-toolbar-button-icon" slot="startIcon" data-bind="attr: {src: 'js/jet-composites/wrc-frontend/1.0.0/images/' + i18n.toolbar.buttons.preferences.image + '.png'}" />
+    <span class="cfe-toolbar-button-label" data-bind="text: [[i18n.toolbar.buttons.preferences.label]]"></span>
+  </oj-button>
+</oj-bind-if>
+
